@@ -5,6 +5,14 @@ Our MYNTRA <hacker-ramp> WeForShe 2024 submission introduces a Gen Z-oriented ce
 
 Welcome to our submission for MYNTRA <hacker-ramp> WeForShe 2024! Our solution introduces a Gen Z-oriented celebrity section in the Myntra app, enhanced with a chatbot. Users can request and purchase entire celebrity looks or individual pieces, making it easy for Gen Z to style like their favorite celebs.
 
+##Snapshots of the Project
+![image](https://github.com/user-attachments/assets/0c968ac2-65ba-4122-96e2-e6aa4d800a30)
+![image](https://github.com/user-attachments/assets/5bfe2c1c-dc96-408c-98bb-6ef3aa56b116)
+![image](https://github.com/user-attachments/assets/90e2c6d8-9b94-45cd-847a-cffb050adcbe)
+![image](https://github.com/user-attachments/assets/d1cc085f-37e0-4b29-973e-8a7c15d75eea)
+![image](https://github.com/user-attachments/assets/fec831e6-fcb6-4133-aa4a-f4a4b55e0060)
+
+
 ## Features
 
 - **Celebrity Look Suggestions**: Users can ask for specific looks, and the bot will suggest celebrity-inspired outfits.
@@ -23,9 +31,9 @@ Welcome to our submission for MYNTRA <hacker-ramp> WeForShe 2024! Our solution i
 ## How to Use
 
 1. **Ask for a Look**: Interact with the chatbot to request specific celebrity looks.
-2. **Browse Suggestions**: View the suggested outfits or individual pieces.
-3. **Select your fav Celebrity**: Select your fav Celeb and explore all the outfits.
-4. **Purchase**: Add items to your cart and proceed to checkout.
+3. **Browse Suggestions**: View the suggested outfits or individual pieces.
+4. **Select your fav Celebrity**: Select your fav Celeb and explore all the outfits.
+6. **Purchase**: Add items to your cart and proceed to checkout.
 
 ## Conclusion
 
