@@ -1,0 +1,304 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-bar .search-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.navbar .search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.navbar .user-options {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .user-options .icon {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.navbar .user-options .icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+.section-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.shop-the-style {
+    background-color: #fff;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shop-the-style h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.celebrity-style-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.arrow {
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+
+.celebrity-style {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.celebrity-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.celebrity-style img {
+    width: 270px;
+    /* Increased size */
+    height: 320px;
+    /* Increased size */
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+.celebrity-style img:hover {
+    transform: scale(1.05);
+}
+
+.celebrity-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.new {
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    /* Center align the content */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the content both horizontally and vertically */
+    z-index: 1;
+    /* Ensure text content is above the image */
+    color: white;
+    /* Adjust text color for better visibility */
+}
+
+.banner-content h2 {
+    font-size: 2.5em;
+    /* Adjust font size as per your design */
+    margin-bottom: 10px;
+    /* Add some spacing between the elements */
+}
+
+.banner-content p {
+    font-size: 1.5em;
+    /* Adjust font size as per your design */
+}
+
+.banner-content .highlight {
+    font-weight: bold;
+    /* Make highlighted text bold */
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    /* Ensure the image fills the container */
+    height: auto;
+    border-radius: 10px;
+    /* Add border-radius for rounded corners, adjust as needed */
+}
+
+/* styles.css */
+
+/* Existing styles */
+
+/* Chatbot styles */
+.chatbox {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-content {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.user-message {
+    text-align: right;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bot-message {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#userInput {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

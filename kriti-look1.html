@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriti's Look</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo img {
+            height: 40px;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar nav ul li {
+            margin: 0 10px;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .search-bar .search-icon {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .navbar .search-bar input {
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .navbar .user-options {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .user-options .icon {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .navbar .user-options .icon img {
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .product-page {
+            display: flex;
+            padding: 20px;
+        }
+
+        .og-look{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            max-width: 500px;
+            margin-right: 50px;
+            text-align: center; /* Center aligns the text and image */
+}
+
+   
+
+.og-look p {
+    font-size: 20px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+    position: relative; /* Positioning for animation */
+    display: inline-block;
+    padding: 10px 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* Pink background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.og-look p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent); /* Gradient overlay */
+    z-index: -1; /* Behind the text */
+    border-radius: 10px; /* Rounded corners */
+}
+
+
+
+        .og-look img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 10px; /* Ensures the image is perfectly round */
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+
+        .product-gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 300px;
+            margin-right: 20px;
+        }
+
+        .product-gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            margin-bottom: 20px;
+        }
+
+        .product-thumbnails {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+        }
+
+        .product-thumbnails img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+
+        .product-details {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ratings {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.selling-price {
+    font-size: 20px;
+    color: #e53935;
+    margin-bottom: 10px;
+}
+
+.price-details {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.mrp {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.discount {
+    color: #e53935;
+}
+
+.inclusive-taxes {
+    color: #999;
+}
+
+.more-color {
+    margin-bottom: 20px;
+}
+
+.size-options {
+    margin-bottom: 20px;
+}
+
+.size-options label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.size-options select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.actions .add-to-bag {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.actions .add-to-wishlist {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+.actions .add-to-bag i,
+.actions .add-to-wishlist i {
+    margin-right: 5px;
+}
+
+.delivery-options {
+    margin-bottom: 20px;
+}
+
+.delivery-options input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.additional-info {
+    list-style: none;
+    padding: 0;
+}
+
+.additional-info li {
+    margin-bottom: 5px;
+    color: #333;
+}
+.og-look .icon {
+    margin-left: 10px;
+}
+
+.og-look .icon img {
+    width: 24px; /* Adjust the size as needed */
+    height: auto;
+}
+
+    </style>
+    <script>
+        function updateProductDetails(image, title, price, discount) {
+            document.querySelector('.product-details h1').textContent = title;
+            document.querySelector('.product-details .price').textContent = price;
+            document.querySelector('.product-details .discount').textContent = discount;
+        }
+
+        function enlargeImage(imgElement) {
+            const galleryImages = document.querySelectorAll('.product-gallery img');
+            galleryImages.forEach(img => {
+                img.classList.remove('enlarged-image');
+                img.style.transform = 'scale(1)';
+            });
+
+            imgElement.classList.add('enlarged-image');
+            imgElement.style.transform = 'scale(1.1)';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const thumbnails = document.querySelectorAll('.product-thumbnails img');
+            thumbnails.forEach(img => {
+                img.addEventListener('click', () => {
+                    const newImage = document.createElement('img');
+                    newImage.src = img.src;
+                    newImage.style.width = '100%';
+                    newImage.style.height = 'auto';
+                    newImage.style.maxWidth = '400px';
+                    newImage.style.borderRadius = '8px';
+                    newImage.style.cursor = 'pointer';
+                    newImage.style.transition = 'transform 0.5s ease';
+                    newImage.style.marginBottom = '20px';
+                    newImage.addEventListener('click', () => enlargeImage(newImage));
+
+                    const gallery = document.querySelector('.product-gallery');
+                    gallery.innerHTML = '';
+                    gallery.appendChild(newImage);
+
+                    enlargeImage(newImage);
+
+                    const details = img.getAttribute('onclick');
+                    eval(details);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home & Living</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">CelebSpotted <span class="new">NEW</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <img src="images/search.png" alt="Search Icon" class="search-icon">
+                <input type="text" placeholder="Search for products, brands and more">
+            </div>
+            <div class="user-options">
+                <div class="icon">
+                    <img src="images/user.png" alt="Profile">
+                    <span>Profile</span>
+                </div>
+                <div class="icon">
+                    <img src="images/wishlist.png" alt="Wishlist">
+                    <span>Wishlist</span>
+                </div>
+                <div class="icon">
+                    <img src="images/bag.png" alt="Bag">
+                    <span>Bag</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="product-page">
+            <div class="og-look">
+                <p>Recreate Kriti's Look</p>
+                <div class="icon">
+                    <img src="images/hand.png" alt="hand">
+                </div>
+                <img src="images/kriti-look1.jpeg" alt="Kriti's Look 1">
+            </div>
+            <div class="product-gallery">
+                <img src="images/kritidressshop.jpg.jpeg" alt="Kriti Look 1" class="enlarged-image" onclick="updateProductDetails('images/kritidressshop.jpg.jpeg', 'Cherry Red Dress with a cutout', 'Rs. 500', 'Rs. 1000 (50% OFF)')">
+            </div>
+            <div class="product-thumbnails">
+                <img src="images/kritidressshop.jpg.jpeg" alt="Kriti Look 1" onclick="updateProductDetails('images/kritidressshop.jpg.jpeg', 'Cherry Red Dress with a cutout', 'Rs. 1000', 'Rs. 2000 (50% OFF)')">
+                <img src="images/kritidressjewel.jpg.jpeg" alt="Kriti Look 2" onclick="updateProductDetails('images/kritidressjewel.jpg.jpeg', 'Brown Basketweave Earrings', 'Rs. 400', 'Rs. 800 (50% OFF)')">
+                <img src="images/belt.jpg" alt="kriti-look1" onclick="updateProductDetails('images/belt.jpg', 'Sparkly Belt', 'Rs. 799', 'Rs. 1499 (50% OFF)')">
+                
+            </div>
+            <div class="product-details">
+                <h1>Red Keyhole Neckline Dress</h1>
+                <div class="ratings">
+                    <span>4.3</span>
+                    <span>|</span>
+                    <span>5.3k Ratings</span>
+                </div>
+                <div class="price">
+                    <p>₹720</p>
+                    <p>Maximum Retail Price Rs. 1000 (Incl. of all taxes)</p>
+                    <p>Discount Rs. 272 OFF</p>
+                    <p>Selling Price Rs. 720 (Incl. of all taxes)</p>
+                    <p>MRP ₹1000 (Rs. 272 OFF) inclusive of all taxes</p>
+                </div>
+                <div class="more-color">
+                    <p>MORE COLOR</p>
+                </div>
+                <div class="size-options">
+                    <label for="size">SELECT SIZE SIZE CHART</label>
+                    <select id="size">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                        <option value="3xl">3XL</option>
+                        <option value="4xl">4XL</option>
+                        <option value="5xl">5XL</option>
+                        <option value="6xl">6XL</option>
+                    </select>
+                </div>
+                <div class="actions">
+                    <button class="add-to-bag"><i class="fas fa-shopping-bag"></i> ADD TO BAG</button>
+                    <button class="add-to-wishlist"><i class="fas fa-heart"></i> WISHLIST</button>
+                </div>
+                <div class="delivery-options">
+                    <p>DELIVERY OPTIONS</p>
+                    <input type="text" placeholder="Enter pincode">
+                    <p>Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+                </div>
+                <div class="product-info">
+                    <p>100% Original Products</p>
+                    <p>Pay on delivery might be available</p>
+                    <p>Easy 7 days returns and exchanges</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+
+</html>

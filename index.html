@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home & Living</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="chatbot.html">CelebSpotted <span class="new">NEW</span></a></li>
+
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <img src="images/search.png" alt="Search Icon" class="search-icon">
+                <input type="text" placeholder="Search for products, brands and more">
+            </div>
+            <div class="user-options">
+                <div class="icon">
+                    <img src="images/user.png" alt="Profile">
+                    <span>Profile</span>
+                </div>
+                <div class="icon">
+                    <img src="images/wishlist.png" alt="Wishlist">
+                    <span>Wishlist</span>
+                </div>
+                <div class="icon">
+                    <img src="images/bag.png" alt="Bag">
+                    <span>Bag</span>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-content">
+                <h2>Discover Celebrity Styles</h2>
+                <p>Where <span class="highlight">Gen Z Fashion</span> Meets <span class="highlight">Star Power!</span>
+                </p>
+            </div>
+            <img src="images/banner.jpg" alt="Banner Image">
+        </div>
+
+
+    </header>
+    <main>
+        <section class="shop-the-style">
+            <h2>Pick Your Style</h2>
+            <div class="celebrity-style-container">
+                <div class="arrow left" onclick="scrollLeft()">&#10094;</div>
+                <div class="celebrity-style" id="celebrityStyle">
+                    <div class="celebrity-item">
+                        <img src="images/alia.jpg" alt="Alia" onclick="openStylePage('alia')">
+                        <p>Alia Bhatt</p>
+                    </div>
+
+                    <div class="celebrity-item">
+                        <img src="images/katrina.jpg" alt="Katrina" onclick="openStylePage('katrina')">
+                        <p>Katrina Kaif</p>
+                    </div>
+                    <div class="celebrity-item">
+                        <img src="images/pc.jpg" alt="Priyanka" onclick="openStylePage('pc')">
+                        <p>Priyanka Chopra</p>
+                    </div>
+                    <div class="celebrity-item">
+                        <img src="images/kriti.jpg" alt="Kriti" onclick="openStylePage('kriti')">
+                        <p>Kriti Sanon</p>
+                    </div>
+                    <div class="celebrity-item">
+                        <img src="images/anushka.jpg" alt="Anushka" onclick="openStylePage('anushka')">
+                        <p>Anushka Sharma</p>
+                    </div>
+                    <div class="celebrity-item">
+                        <img src="images/kiara.jpg" alt="Kiara" onclick="openStylePage('kiara')">
+                        <p>Kiara Advani</p>
+                    </div>
+                    <div class="celebrity-item">
+                        <img src="images/sara.jpg" alt="Sara" onclick="openStylePage('sara')">
+                        <p>Sara Ali Khan</p>
+                    </div>
+                    <div class="celebrity-item">
+                        <img src="images/ananya.webp" alt="Ananya" onclick="openStylePage('ananya')">
+                        <p>Ananya Panday</p>
+                    </div>
+                </div>
+                <div class="arrow right" onclick="scrollRight()">&#10095;</div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
