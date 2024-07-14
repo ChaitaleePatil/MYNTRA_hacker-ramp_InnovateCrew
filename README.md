@@ -5,7 +5,7 @@ Our MYNTRA <hacker-ramp> WeForShe 2024 submission introduces a Gen Z-oriented ce
 
 Welcome to our submission for MYNTRA <hacker-ramp> WeForShe 2024! Our solution introduces a Gen Z-oriented celebrity section in the Myntra app, enhanced with a chatbot. Users can request and purchase entire celebrity looks or individual pieces, making it easy for Gen Z to style like their favorite celebs.
 
-##Snapshots of the Project
+## Snapshots of the Project
 ![image](https://github.com/user-attachments/assets/0c968ac2-65ba-4122-96e2-e6aa4d800a30)
 ![image](https://github.com/user-attachments/assets/5bfe2c1c-dc96-408c-98bb-6ef3aa56b116)
 ![image](https://github.com/user-attachments/assets/90e2c6d8-9b94-45cd-847a-cffb050adcbe)
